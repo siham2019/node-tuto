@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<%-include('h')%>
+<body>
+    <form action="" method="post">
+        <input type="text" name="name">
+        <input type="submit">
+    </form>
+    <%
+     if(typeof name !=="undefined"){
+    %>
+       <h4><%=name%></h4>
+
+     <% }else{
+     %>
+        <p>entrer un nom</p>
+
+     <%}
+     %>
+</body>
+</html>
